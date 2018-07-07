@@ -1,0 +1,6 @@
+programa:
+		mpicc bcast1.c -o bcast1
+
+salida:
+		mpirun -np 4 bcast1
+

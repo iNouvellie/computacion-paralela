@@ -1,0 +1,5 @@
+programa:
+		mpicc different_task.c -o different_task
+
+salida:
+		mpirun -np 4 different_task

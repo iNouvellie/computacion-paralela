@@ -1,0 +1,5 @@
+programa:
+		mpicc hello2.c -o hello2
+
+salida:
+		mpirun -np 4 hello2

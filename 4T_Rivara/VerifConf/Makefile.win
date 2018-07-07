@@ -1,0 +1,39 @@
+# Project: Verif_conf
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = source/base.o source/functions.o source/main.o source/read_files.o $(RES)
+LINKOBJ  = source/base.o source/functions.o source/main.o source/read_files.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = Verif.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Verif.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "Verif.exe" $(LIBS)
+
+source/base.o: source/base.c
+	$(CC) -c source/base.c -o source/base.o $(CFLAGS)
+
+source/functions.o: source/functions.c
+	$(CC) -c source/functions.c -o source/functions.o $(CFLAGS)
+
+source/main.o: source/main.c
+	$(CC) -c source/main.c -o source/main.o $(CFLAGS)
+
+source/read_files.o: source/read_files.c
+	$(CC) -c source/read_files.c -o source/read_files.o $(CFLAGS)
