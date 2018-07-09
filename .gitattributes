@@ -1,4 +1,4 @@
 # Auto detect text files and perform LF normalization
 #* text=auto
 
-EjemplosComputacionParalela linguist-generated=true
+EjemplosComputacionParalela/* linguist-documentation
