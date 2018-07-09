@@ -1,4 +1,6 @@
 # Auto detect text files and perform LF normalization
 #* text=auto
-$ cat .gitattributes
-*.rb linguist-language=Java
+
+EjemplosComputacionParalela/* linguist-documentation
+
+*.rb linguist-language=Python
