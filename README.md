@@ -1,4 +1,5 @@
 #Paralela
+#C, Jupyter, Python
 
 Computación Paralela 2016
 
