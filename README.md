@@ -1,10 +1,8 @@
-# computación-paralela
+# computacion-paralela
 
 C, Jupyter, Python
 
-Computación Paralela 2016
-
-Cátedra: Lorna Figueroa Morales 
+Computación Paralela 2016. Cátedra: Lorna Figueroa Morales 
 
 Temas de investigación: 
 * Mallas de simulación de líquidos.
